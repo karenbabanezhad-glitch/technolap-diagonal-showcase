@@ -1,0 +1,79 @@
+[
+  {
+    "capability": "code",
+    "source": "HTML/CSS/JS archive",
+    "outcome": "migrate",
+    "status": "verified",
+    "next_action": "None",
+    "verification": "Complete source sections ported to React at /; route test passed."
+  },
+  {
+    "capability": "images",
+    "source": "16 bundled WebP images",
+    "outcome": "migrate",
+    "status": "verified",
+    "next_action": "None",
+    "verification": "All 16 source images preserved, resampled 2x with mild sharpening and optimized WebP delivery; 19 rendered image instances decoded at all four viewports. Resampling does not recover missing source detail."
+  },
+  {
+    "capability": "navigation",
+    "source": "In-page anchors and mobile menu",
+    "outcome": "migrate",
+    "status": "verified",
+    "next_action": "None",
+    "verification": "In-page anchors and mobile menu verified; all anchor targets resolve at 1440, 768, 390 and 360 pixels."
+  },
+  {
+    "capability": "search",
+    "source": "Local page heading search",
+    "outcome": "migrate",
+    "status": "verified",
+    "next_action": "None",
+    "verification": "Local heading match and result notification exercised successfully in browser."
+  },
+  {
+    "capability": "cart",
+    "source": "In-memory demonstration cart only",
+    "outcome": "migrate",
+    "status": "verified",
+    "next_action": "None",
+    "verification": "In-memory demo add/remove/clear preserved; browser flow and three unit tests pass. No production checkout exists in the supplied source."
+  },
+  {
+    "capability": "schema and records",
+    "source": "No datastore or exports in source",
+    "outcome": "not_applicable",
+    "status": "verified",
+    "next_action": "None"
+  },
+  {
+    "capability": "auth identities and authorization",
+    "source": "No authentication or user permissions in source",
+    "outcome": "not_applicable",
+    "status": "verified",
+    "next_action": "None"
+  },
+  {
+    "capability": "providers and endpoints",
+    "source": "Only external link to technolap.ir; no API/webhooks/callbacks/schedules/secrets",
+    "outcome": "preserve",
+    "status": "verified",
+    "next_action": "None",
+    "verification": "Original technolap.ir links retained; source contains no service credentials or backend endpoints."
+  },
+  {
+    "capability": "cutover",
+    "source": "Static source archive only",
+    "outcome": "not_applicable",
+    "status": "verified",
+    "next_action": "Publishing is a separate user action"
+  },
+  {
+    "capability": "verification",
+    "source": "Browser checks",
+    "outcome": "migrate",
+    "status": "verified",
+    "next_action": "None",
+    "verification": "Latest build OK; four tests pass; browser at 1440/768/390/360 has no runtime errors or horizontal overflow; images, footer, menu, search and cart verified."
+  }
+]
